@@ -1,0 +1,7 @@
+
+#chart{
+    width: 600px;
+    height:700px;
+    margin: 0 auto;/*placing the element at the center*/
+    border: 1px solid black;
+}
