@@ -1,0 +1,1 @@
+This section is based in the tutorial bought on UDEMY called: Html5 Canvas ultimate guide. Here I will build the examples shown in the videos with my own comments. 

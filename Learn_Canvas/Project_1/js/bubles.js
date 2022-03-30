@@ -5,9 +5,22 @@ canvas.height = window.innerHeight;
 const context = canvas.getContext("2d"); // this method is especific to canvas elements.
 var particlesArray = [];
 
+let keyValue = '';
+this.addEventListener('keydown',(event)=>{
+    if(parseInt(event.key)){
+        keyValue = event.key;
+    }
+    else{
+        keyValue='';
+    }
+    console.log(keyValue);
+})
+
+
 var hue = 0;
 // adding this event to hold the rectangle in the proper size instead of stretch or shorten everytime that the window is resized.
 window.addEventListener('resize',function(){
+
 
 
     
@@ -70,7 +83,7 @@ function handleParticles(){
         if(particlesArray[i].size<0.1){
             particlesArray.splice(i,1);
             i--;
-            console.log('test1');
+           //console.log('test1');
        }
         for(let j = 0;j<particlesArray.length;j++){
            if(p1){
